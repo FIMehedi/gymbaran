@@ -1,14 +1,25 @@
-import './globals.css'
+'use client';
+
+import Navbar from '@/components/shared/navbar/Navbar';
+import Overlay from '@/components/shared/overlay/Overlay';
+import OverlayProvider from '@/context/OverlayProvider';
+import './globals.css';
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      {/*
+	return (
+		<html lang="en">
+			{/*
         <head /> will contain the components returned by the nearest parent
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <head />
-      <body>{children}</body>
-    </html>
-  )
+			<head />
+			<body className="overflow-x-hidden">
+				<OverlayProvider>
+					<Overlay />
+					<Navbar />
+					{children}
+				</OverlayProvider>
+			</body>
+		</html>
+	);
 }
