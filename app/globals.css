@@ -33,4 +33,8 @@ body {
 	.bg-gr-4BACE1-D8F1FF {
 		@apply bg-[linear-gradient(45.98deg,#4BACE1,#D8F1FF)];
 	}
+
+	.bg-gr-5478EF-D6DFFF {
+		@apply bg-[linear-gradient(45.98deg,#5478EF,#D6DFFF)];
+	}
 }

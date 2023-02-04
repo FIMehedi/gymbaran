@@ -1,20 +1,7 @@
+import GradientEllipse from '@/components/shared/widget/GradientEllipse';
 import Image from 'next/image';
 
-function GradientEllipse({ bg, svgName }) {
-	return (
-		<div className={`${bg} rounded-full p-4 w-fit h-fit shadow-secondary`}>
-			<Image
-				src={`/images/svg/${svgName}`}
-				alt=""
-				width="30"
-				height="30"
-				className="h-5 lg:h-8 w-5 lg:w-8"
-			/>
-		</div>
-	);
-}
-
-export default function RightSide() {
+export default function HeroRightSide() {
 	return (
 		<div className="w-full md:w-1/2">
 			<div className="relative">

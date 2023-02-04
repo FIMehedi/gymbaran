@@ -16,7 +16,7 @@ function Brand({ imgName, alt }) {
 	);
 }
 
-export default function LeftSide() {
+export default function HeroLeftSide() {
 	return (
 		<div className="w-full md:w-1/2">
 			<div className="w-full max-w-[450px]">
